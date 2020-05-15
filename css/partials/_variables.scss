@@ -1,0 +1,15 @@
+$cp-darkBlue:hsl(240, 38%, 20%);
+$cp-grayBlue:hsl(240, 18%, 77%);
+//
+$cs-blue: hsl(212, 86%, 64%);
+$cs-blueFr: adjust-color($cs-blue, $hue: 20);
+$cs-blueBk: adjust-color($cs-blue, $hue: -20);
+//
+//font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+$font: 'Inter',
+sans-serif;
+$font-light: 300;
+$font-regular: 500;
+$font-bold: 700;
+// Font size: 32px

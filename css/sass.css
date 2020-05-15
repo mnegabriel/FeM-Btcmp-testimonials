@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer {
+  background: linear-gradient(30deg, #54d3f2, #5469f2);
+  margin-bottom: auto;
+  width: 100%;
+  padding: 11px 0;
+}
+
+.mainFooter {
+  color: white;
+  text-align: center;
+}
+
+.mainFooter > p {
+  padding: 8px 0;
+  margin: 0;
+}
+
+.mainFooter a {
+  background-color: white;
+  padding: 2px 13px;
+  margin-left: 8px;
+  color: #babacf;
+  text-decoration: none;
+  border-radius: 15px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.mainFooter a:hover {
+  background: none;
+  color: white;
+  border: 1px solid white;
+}
+
+.mainFooter a:active {
+  opacity: 0.6;
+}
+
+@media (min-width: 800px) {
+  .mainFooter {
+    width: 70%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.page {
+  background-image: url("../images/pattern-curve.svg");
+}
+/*# sourceMappingURL=sass.css.map */
