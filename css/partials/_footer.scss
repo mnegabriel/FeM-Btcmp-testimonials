@@ -5,10 +5,10 @@ footer {
 }
 
 .mainFooter {
-    color: white;
     text-align: center;
     & p,
     & a {
+        color: white;
         font-size: .7rem;
     }
     & p {

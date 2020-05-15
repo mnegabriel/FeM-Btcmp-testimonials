@@ -5,6 +5,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  text-decoration: none;
+  color: #202046;
 }
 
 body {
@@ -18,12 +20,12 @@ footer {
 }
 
 .mainFooter {
-  color: white;
   text-align: center;
 }
 
 .mainFooter p,
 .mainFooter a {
+  color: white;
   font-size: .7rem;
 }
 
@@ -117,7 +119,7 @@ footer {
   text-align: center;
   width: 375px;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 30px 30px;
 }
 
 .quote > * {
