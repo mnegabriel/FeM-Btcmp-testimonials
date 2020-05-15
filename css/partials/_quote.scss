@@ -1,0 +1,24 @@
+.quote {
+    @include bg-img("../images/pattern-quotes.svg", top, 17%);
+    text-align: center;
+    width: 375px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    &>* {
+        display: block;
+    }
+    &__text {
+        padding-bottom: 20px;
+        font-weight: $font-light;
+        font-size: 1.1em;
+        line-height: 1.3em;
+    }
+    &__author {
+        & p:first-child {
+            font-weight: $font-bold;
+        }
+        & p:last-child {
+            opacity: .4;
+        }
+    }
+}

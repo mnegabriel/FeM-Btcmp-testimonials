@@ -1,0 +1,4 @@
+.page {
+    @include bg-img("../images/pattern-curve.svg", bottom);
+    padding-top: 30px;
+}

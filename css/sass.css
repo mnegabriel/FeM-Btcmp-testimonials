@@ -9,8 +9,6 @@
 
 body {
   min-height: 100%;
-  padding-top: 30px;
-  top: 0;
 }
 
 footer {
@@ -71,11 +69,7 @@ footer {
 
 .page {
   background: url("../images/pattern-curve.svg") no-repeat bottom/contain;
-}
-
-.photo img {
-  -webkit-box-shadow: 0px 50px 40px -32px rgba(47, 49, 78, 0.4);
-          box-shadow: 0px 50px 40px -32px rgba(47, 49, 78, 0.4);
+  padding-top: 30px;
 }
 
 .canvas {
@@ -94,6 +88,8 @@ footer {
 .photo img {
   width: 250px;
   border-radius: 5px;
+  -webkit-box-shadow: 0px 50px 40px -32px rgba(47, 49, 78, 0.4);
+          box-shadow: 0px 50px 40px -32px rgba(47, 49, 78, 0.4);
 }
 
 .icons {
@@ -114,5 +110,32 @@ footer {
 
 .icons img {
   width: 8px;
+}
+
+.quote {
+  background: url("../images/pattern-quotes.svg") no-repeat top/17%;
+  text-align: center;
+  width: 375px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.quote > * {
+  display: block;
+}
+
+.quote__text {
+  padding-bottom: 20px;
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 1.3em;
+}
+
+.quote__author p:first-child {
+  font-weight: 700;
+}
+
+.quote__author p:last-child {
+  opacity: .4;
 }
 /*# sourceMappingURL=sass.css.map */
