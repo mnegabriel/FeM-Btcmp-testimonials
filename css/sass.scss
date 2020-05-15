@@ -1,12 +1,13 @@
 @import "./partials/variables";
+@import "./partials/mixins";
 @import "./partials/base";
 @import "./partials/footer";
-@mixin bg-img($url, $bg-pos:center) {
-    background: url($url) no-repeat $bg-pos / contain;
-}
-
 .page {
     @include bg-img("../images/pattern-curve.svg", bottom);
+}
+
+%shadow {
+    box-shadow: 0px 50px 40px -32px rgba(47, 49, 78, 0.4);
 }
 
 .canvas {
@@ -19,30 +20,27 @@
     @include bg-img("../images/pattern-bg.svg", center);
     width: 375px;
     padding: 30px 0 20px;
-    margin: 30px auto;
+    margin: 0 auto 30px;
     & img {
         width: 250px;
         border-radius: 5px;
+        @extend %shadow;
     }
 }
 
 .icons {
     list-style-type: none;
     position: absolute;
+    transform-origin: center center;
     background-color: white;
     border-radius: 20px;
-    transform-origin: center;
-    bottom: 40%;
-    left: 50%;
-    padding: 10px 0;
+    bottom: 0;
+    left: calc(50% - 38px);
     &>li {
-        display: inline;
-        padding: 0 15px;
+        display: inline-block;
+        padding: 10px 15px;
     }
     & img {
         width: 8px;
     }
 }
-
-.canvas,
-.quote {}

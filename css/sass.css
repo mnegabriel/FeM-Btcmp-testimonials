@@ -4,11 +4,17 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100%;
+  padding-top: 30px;
+  top: 0;
 }
 
 footer {
   background: linear-gradient(30deg, #54d3f2, #5469f2);
-  margin-bottom: 0;
   width: 100%;
   padding: 11px 0;
 }
@@ -18,7 +24,12 @@ footer {
   text-align: center;
 }
 
-.mainFooter > p {
+.mainFooter p,
+.mainFooter a {
+  font-size: .7rem;
+}
+
+.mainFooter p {
   padding: 8px 0;
   margin: 0;
 }
@@ -62,6 +73,11 @@ footer {
   background: url("../images/pattern-curve.svg") no-repeat bottom/contain;
 }
 
+.photo img {
+  -webkit-box-shadow: 0px 50px 40px -32px rgba(47, 49, 78, 0.4);
+          box-shadow: 0px 50px 40px -32px rgba(47, 49, 78, 0.4);
+}
+
 .canvas {
   position: relative;
   width: 100%;
@@ -72,7 +88,7 @@ footer {
   background: url("../images/pattern-bg.svg") no-repeat center/contain;
   width: 375px;
   padding: 30px 0 20px;
-  margin: 30px auto;
+  margin: 0 auto 30px;
 }
 
 .photo img {
@@ -83,18 +99,17 @@ footer {
 .icons {
   list-style-type: none;
   position: absolute;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
   background-color: white;
   border-radius: 20px;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  bottom: 40%;
-  left: 50%;
-  padding: 10px 0;
+  bottom: 0;
+  left: calc(50% - 38px);
 }
 
 .icons > li {
-  display: inline;
-  padding: 0 15px;
+  display: inline-block;
+  padding: 10px 15px;
 }
 
 .icons img {
