@@ -1,18 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
-body {
+* {
   padding: 0;
   margin: 0;
-  min-height: 100vh;
-}
-
-* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 footer {
   background: linear-gradient(30deg, #54d3f2, #5469f2);
-  margin-bottom: auto;
+  margin-bottom: 0;
   width: 100%;
   padding: 11px 0;
 }
@@ -63,6 +59,45 @@ footer {
 }
 
 .page {
-  background-image: url("../images/pattern-curve.svg");
+  background: url("../images/pattern-curve.svg") no-repeat bottom/contain;
+}
+
+.canvas {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.photo {
+  background: url("../images/pattern-bg.svg") no-repeat center/contain;
+  width: 375px;
+  padding: 30px 0 20px;
+  margin: 30px auto;
+}
+
+.photo img {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.icons {
+  list-style-type: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  bottom: 40%;
+  left: 50%;
+  padding: 10px 0;
+}
+
+.icons > li {
+  display: inline;
+  padding: 0 15px;
+}
+
+.icons img {
+  width: 8px;
 }
 /*# sourceMappingURL=sass.css.map */
