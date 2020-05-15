@@ -72,6 +72,7 @@ footer {
 .page {
   background: url("../images/pattern-curve.svg") no-repeat bottom/contain;
   padding-top: 30px;
+  min-height: calc(100vh - 80px);
 }
 
 .canvas {
