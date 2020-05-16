@@ -32,3 +32,26 @@
         width: 8px;
     }
 }
+
+@media (min-width:1000px) {
+    .canvas {
+        grid-area: box1;
+        //width: 100%;
+    }
+    .canva,
+    .photo {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .photo img {
+        width: 73%;
+        padding-right: 10px;
+        padding-top: 30px;
+        margin-bottom: 22px;
+    }
+    .icons {
+        bottom: 27px;
+        left: calc(28% - 38px);
+    }
+}

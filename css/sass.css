@@ -70,9 +70,23 @@ footer {
 }
 
 .page {
-  background: url("../images/pattern-curve.svg") no-repeat bottom/contain;
+  background: url("../images/pattern-curve.svg") no-repeat bottom left/auto;
   padding-top: 30px;
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
+}
+
+@media (min-width: 1000px) {
+  .page {
+    padding: 30px 3%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: .8fr 1fr;
+        grid-template-columns: .8fr 1fr;
+        grid-template-areas: "box2 box1";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .canvas {
@@ -115,6 +129,28 @@ footer {
   width: 8px;
 }
 
+@media (min-width: 1000px) {
+  .canvas {
+    grid-area: box1;
+  }
+  .canva,
+  .photo {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .photo img {
+    width: 73%;
+    padding-right: 10px;
+    padding-top: 30px;
+    margin-bottom: 22px;
+  }
+  .icons {
+    bottom: 27px;
+    left: calc(28% - 38px);
+  }
+}
+
 .quote {
   background: url("../images/pattern-quotes.svg") no-repeat top/17%;
   text-align: center;
@@ -140,5 +176,22 @@ footer {
 
 .quote__author p:last-child {
   opacity: .4;
+}
+
+@media (min-width: 1000px) {
+  .quote {
+    grid-area: box2;
+    text-align: left;
+    z-index: 1;
+    padding: 78px 0 78px 8vw;
+    width: 123%;
+    background-position: 190px 31px;
+  }
+  .quote__text {
+    font-size: 32px;
+  }
+  .quote__author > p {
+    display: inline;
+  }
 }
 /*# sourceMappingURL=sass.css.map */

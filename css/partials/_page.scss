@@ -1,5 +1,15 @@
 .page {
-    @include bg-img("../images/pattern-curve.svg", bottom);
+    @include bg-img("../images/pattern-curve.svg", bottom left, auto);
     padding-top: 30px;
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
+}
+
+@media (min-width:1000px) {
+    .page {
+        padding: 30px 3%;
+        display: grid;
+        grid-template-columns: .8fr 1fr;
+        grid-template-areas: "box2 box1";
+        align-items: center;
+    }
 }

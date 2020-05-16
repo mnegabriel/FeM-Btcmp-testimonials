@@ -22,3 +22,20 @@
         }
     }
 }
+
+@media (min-width:1000px) {
+    .quote {
+        grid-area: box2;
+        text-align: left;
+        z-index: 1;
+        padding: 78px 0 78px 8vw;
+        width: 123%;
+        background-position: 190px 31px;
+        &__text {
+            font-size: 32px;
+        }
+        &__author>p {
+            display: inline;
+        }
+    }
+}
